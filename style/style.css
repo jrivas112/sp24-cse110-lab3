@@ -151,6 +151,17 @@ nav {
   color: ivory;
   background-color:#74BDCB;
 }
+.textboxet{
+    font-size: 1 rem;
+    width: 100vw;
+    height: 100vh;
+}
+.textboxet2{
+    font-size: 1pt;
+}
+.textboxet3{
+    font-size: 1pc;
+}
   @media (max-width: 720px) {
     body{
         min-width: 100%
