@@ -42,7 +42,7 @@ h1{
 
 /* CSS Style for the attedance header */
 #attendance {
-    color: var(--primary, color(0.75 0.75 0.75 / 50%));
+    color: var(--primary, #FFF);
 }
 h2, h3{
     color: var(--primary);
