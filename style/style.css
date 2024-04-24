@@ -1,3 +1,7 @@
+html{
+    height: 100%;
+    width: 100%;
+}
 body{
     margin-top: 0px;
     margin-bottom: 0px;
@@ -8,7 +12,13 @@ body{
     padding-right: 0;
     padding-bottom: 0;
     background: linear-gradient(rgba(255, 163, 132, 1) 0%, rgba(231, 242, 248, 1) 100%);
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    
+
     
 }
 :root {
@@ -44,7 +54,7 @@ header{
     font-weight: 400;
     font-style: normal;
     padding: 5px 5px 5px 5px;
-    margin: 10x 10px 10px 10px ;
+    margin: 10x 10px 10px 10px;
     min-width: 100vw;
     max-width: 100vw;
     
@@ -114,4 +124,66 @@ nav {
 
   nav a:hover {
     background-color: #74BDCB;
+  }
+
+  div *{
+    color: white;
+  }
+  div > p{
+    color: black;
+  }
+  a[title] {
+    color: purple;
+  }
+  div + p {
+    color: white;
+  }
+  div ~ p {
+    color: white;
+  }
+  h1:has(+ p) {
+    margin-bottom: 0;
+  }
+
+  nav > a:hover,
+  nav > a:active
+  nav > a:focus {
+  color: ivory;
+  background-color:#74BDCB;
+}
+  @media (max-width: 720px) {
+    body{
+        min-width: 100%
+    }
+    header{
+        position: sticky;
+        top: 0px;
+        min-width:100%;
+        display: flex;
+        justify-content: center;
+        width: fit-content;
+        background-color: rgb(248, 177, 153, 1);
+        margin:0;
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .intro{
+        flex-grow: 1;
+    }
+    .sec2{
+        flex-grow: 1;
+    }
+    
+    .sec3{
+        flex-grow: 1;
+    }
+    nav{
+        position: fixed;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
   }
